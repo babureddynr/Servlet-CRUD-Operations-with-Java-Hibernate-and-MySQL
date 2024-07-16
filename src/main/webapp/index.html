@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Hospital Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); /* Adjust the opacity as needed */
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Ensure it stays behind other content */
+}
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Hari Prasdh Specality Hospital Management System</h1>
+    </header>
+    <nav>
+        <a href="insert.html">Insert Doctor</a>
+        <a href="fetchall.html">Fetch All Doctors</a>
+        <a href="fetchbyid.html">Fetch Doctor By ID</a>
+        <a href="update2.html">Update Doctor Manually</a>
+        <a href="deletebyid.html">Delete Doctor By ID</a>
+        <a href="Deleteall.html">Delete All Doctors</a>
+           <a href="login.jsp">Login</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to the Hospital Management System</h2>
+        <p>Select an operation from the navigation bar above.</p>
+    </div>
+</body>
+</html>

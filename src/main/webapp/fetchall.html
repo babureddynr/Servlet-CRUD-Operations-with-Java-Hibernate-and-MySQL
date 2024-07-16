@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch All Records</title>
+     <link rel="icon" href="https://th.bing.com/th/id/OIP.rUS6yLosUtAWtTOP1tu8vgHaGO?w=203&h=180&c=7&r=0&o=5&pid=1.7" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://img.freepik.com/free-photo/minimalistic-science-banner-with-stethoscope_23-2149431138.jpg?size=626&ext=jpg&ga=GA1.1.229179743.1716544775&semt=ais_user');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); /* Adjust the opacity as needed */
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Ensure it stays behind other content */
+}
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        nav a:active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        form {
+            background-color: white;
+            padding: 100px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+       .button-85 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    /* Adding box-shadow for a raised effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-85:hover {
+    background-color: #45a049;
+    /* Adding a subtle lift on hover */
+    transform: translateY(-2px);
+    /* Increasing the shadow for depth effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-85:active {
+    transform: scale(0.98);
+    /* Adding a deeper push on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To The Hospital Management System</h1>
+    </header>
+    <nav>
+        <a href="insert.html">Insert Doctor</a>
+        <a href="fetchall.html">Fetch All Doctors</a>
+        <a href="fetchbyid.html">Fetch Doctor By ID</a>
+        <a href="update2.html">Update Doctor Manually</a>
+        <a href="deletebyid.html">Delete Doctor By ID</a>
+        <a href="Deleteall.html">Delete All Doctors</a>
+        <a href="login.jsp">Login</a>
+    </nav>
+    <div class="container">
+        <form action="fetchAlljsp" method="get">
+            <button type="submit" class="button-85">Fetch All Records</button>
+        </form>
+    </div>
+</body>
+</html>

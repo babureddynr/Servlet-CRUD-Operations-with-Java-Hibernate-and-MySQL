@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Doctor</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.rUS6yLosUtAWtTOP1tu8vgHaGO?w=203&h=180&c=7&r=0&o=5&pid=1.7" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://img.freepik.com/free-photo/frame-medical-equipment-desk_23-2148519742.jpg?w=996&t=st=1716544824~exp=1716545424~hmac=d0559072529dff1fb38aa357f301e3827e10f4befc56486c9995658b0a5fc08f');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+            backdrop-filter: blur(5px);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        nav a:active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="number"]:focus,
+        input[type="text"]:focus {
+            border-color: #4CAF50;
+        }
+
+        .button-85 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button-85:hover {
+            background-color: #45a049;
+        }
+
+        .button-85:active {
+            transform: scale(0.98);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>Welcome To The Hospital Management System</h1>
+    </header>
+    <nav>
+        <a href="insert.html">Insert Doctor</a>
+        <a href="fetchall.html">Fetch All Doctors</a>
+        <a href="fetchbyid.html">Fetch Doctor By ID</a>
+        <a href="update2.html">Update Doctor Manually</a>
+        <a href="deletebyid.html">Delete Doctor By ID</a>
+        <a href="Deleteall.html">Delete All Doctors</a>
+        <a href="login.jsp">Login</a>
+    </nav>
+    <div class="container">
+        <form action="insertdata" method="get" class="animate__animated animate__fadeInUp">
+            <input type="number" name="id" placeholder="Enter ID" required>
+            <input type="text" name="name" placeholder="Enter Name" required>
+            <button class="button-85" role="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
